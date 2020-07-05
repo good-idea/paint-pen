@@ -1,0 +1,17 @@
+# config stuff
+.vscode
+.keys
+
+node_modules
+
+# build
+lerna-debug.log
+npm-debug.log
+packages/*/lib
+.rpt2_cache
+
+*.log
+
+gallery/.cache
+
+dictionary.json

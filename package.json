@@ -1,0 +1,31 @@
+{
+  "name": "@paint-pen/repo",
+  "version": "0.0.0",
+  "description": "Monorepo for Paint Pen",
+  "main": "index.js",
+  "repository": "https://www.github.com/good-idea/paint-pen",
+  "author": "Joseph Thomas <joseph@good-idea.studio>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "modules/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.3",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.9.6",
+    "typesync": "^0.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["./src"],
+  "compilerOptions": {
+    "outDir": "build",
+    "jsx": "react",
+    "baseUrl": "src",
+    "lib": ["esnext", "dom"],
+    "noUnusedLocals": false,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/__tests__/*",
+    "node_modules",
+    "../node_modules",
+    "dist",
+    "build",
+    "generated"
+  ]
+}

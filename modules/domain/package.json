@@ -1,0 +1,10 @@
+{
+  "name": "@paint-pen/domain",
+  "version": "0.0.0",
+  "description": "Top-level types for Paint Pen",
+  "main": "src/index.ts",
+  "repository": "https://www.github.com/good-idea/paint-pen",
+  "author": "Joseph Thomas <joseph@good-idea.studio>",
+  "license": "MIT",
+  "devDependencies": {}
+}
